@@ -57,3 +57,14 @@
    ```bash
    conda config --show
    ```
+
+## 四、修改默认虚拟环境安装位置
+
+1. 再次打开`.condarc`文件，在最后添加以下语句，并保存。
+
+   ```
+   envs_dirs:
+     - D:\Environment\miniconda3\envs
+   ```
+
+2. 配置`envs`文件夹的用户权限，给予`Users`用户完全控制权限。
