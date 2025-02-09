@@ -116,5 +116,56 @@
 	  conda env create -f EnvName.yaml
 	  ```
 	
-	  
+## 三、管理包
 
+1. 查看包
+
+   ```bash
+   # 查看当前环境已经安装的包
+   conda list
+   # 查看指定环境（EnvName）中的安装包
+   conda list -n EnvName
+   ```
+
+2. 安装包
+
+   ```bash
+   # 安装包到当前环境
+   conda install package-name
+   # 安装指定版本的包到当前环境
+   conda install package-name=version
+   
+   # 安装包到指定环境（EnvName）
+   conda install -n EnvName package-name
+   # 安装指定版本的包到指定环境（EnvName）
+   conda install -n EnvName package-name=version
+   ```
+
+3. 卸载包
+
+   ```bash
+   # 卸载当前环境中的包
+   conda remove package-name
+   
+   # 卸载指定环境（EnvName）中的包
+   conda remove -n EnvName package-name
+   ```
+
+4. 更新包
+
+   ```bash
+   # 更新指定的包
+   conda update package-name
+   # 更新所有包
+   conda update --all
+   # 指定环境同上
+   ```
+
+5. 搜索包
+
+   ```bash
+   # 在conda库中搜索包, 可以模糊搜索
+   conda search search-term
+   ```
+
+   
