@@ -39,9 +39,49 @@
    # 在要添加至Jupyter Notebook的虚拟环境下执行以下命令
    python -m ipykernel install --user --name EnvName --display-name EnvName
    # 其中 EnvName 为要在Jupyter Notebook中创建的虚拟环境名，替换为当前Conda环境名即可
+   python -m ipykernel install --user --name [虚拟环境名] --display-name [想要在jupyter上显示的环境名]
    # 例如：
    python -m ipykernel install --user --name base --display-name base
    python -m ipykernel install --user --name python3.8 --display-name python3.8
    ```
 
-    **创建的Jupyter Notebook虚拟环境会存储在`C:\Users\UserName\AppData\Roaming\jupyter\kernels`目录下**
+   **创建的Jupyter Notebook虚拟环境会存储在`C:\Users\UserName\AppData\Roaming\jupyter\kernels`目录下**
+   
+   **启动Jupyter 后可在浏览器图形化界面中选择对应的虚拟环境内核**
+
+## 三、服务器远程使用Jupyter Notebook
+
+1. 生成Jupyter 配置文件
+
+   ```bash
+   jupyter notebook --generate-config
+   ```
+
+   ![4. jupyter notebook config](img\4. jupyter notebook config.png)
+
+2. 设置密码
+
+   ```bash
+   jupyter notebook password
+   ```
+
+   ![4. jupyter notebook password](img\5. jupyter notebook password.png)
+
+   **输入的密码会保存到 .jupyter/jupyter_notebook_config.json文件中**
+
+   **本操作为自动设置密码，即后面不用在配置文件中单独配置密码**
+
+3. 配置远程访问
+
+   打开`jupyter notebook --generate-config`命令生成的`jupyter_notebook_config.py`文件，在文件最后粘贴以下内容
+
+   ```bash
+   c.NotebookApp.ip='*'      				 	# 在所有的网卡接口上开启服务
+   c.NotebookApp.port = 9008 					# 指定端口
+   c.ExtensionApp.open_browser = False    		# 不打开浏览器
+   c.NotebookApp.notebook_dir='D:\Jupyter' 	# 指定jupyter打开的文件夹
+   ```
+
+4. 添加防火墙入站规则
+
+   配置完成后首次运行会自动弹出防火墙配置，也可自己添加入站规则开放端口
