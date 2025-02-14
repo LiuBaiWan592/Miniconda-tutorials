@@ -77,4 +77,4 @@
      - D:\Environment\miniconda3\pkgs
    ```
 
-2. 配置`envs`文件夹和`pkgs`文件夹的用户权限，给予`Users`用户完全控制权限。
+2. 配置`miniconda3`文件夹的用户权限，给予`Users`用户完全控制权限，否则部分包由于权限不足无法安装。
