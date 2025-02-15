@@ -52,3 +52,31 @@ nvidia-smi
    ```bash
    conda activate pytorch2.2.2
    ```
+
+## 三、安装pytorch到虚拟环境
+
+1. 根据版本选择相应的安装命令（[Previous PyTorch Versions](https://pytorch.org/get-started/previous-versions/)）
+
+   ```bash
+   conda install pytorch==2.2.2 torchvision==0.17.2 torchaudio==2.2.2 pytorch-cuda=11.8 -c pytorch -c nvidia
+   ```
+
+2. 安装完成后测试是否安装成功
+
+   ```bash
+   # 虚拟环境下进入Python
+   python
+   # 依次运行以下命令
+   import torch
+   torch.cuda.is_available()
+   ```
+
+   运行结果为`True`则代表安装成功
+
+   ![pytorch 6. Successful](img\pytorch 6. Successful.png)
+
+   *导入`torch`时`numpy`报错，则适当降低`numpy`版本*
+   
+   ```
+   conda install numpy=1.26
+   ```
