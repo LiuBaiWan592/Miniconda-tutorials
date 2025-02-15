@@ -80,3 +80,7 @@ nvidia-smi
    ```
    conda install numpy=1.26
    ```
+
+## 四、配置Jupyter至虚拟环境
+
+   **接下来就可以参照`Jupyter Notebook 的安装配置`给此虚拟环境配置Jupyter Notebook**
