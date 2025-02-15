@@ -1,4 +1,4 @@
-# Conda 中 Jupyter Notebook 的配置与使用
+# Jupyter Notebook 的安装配置
 
 ## 一、默认环境中安装和运行Jupyter Notebook
 

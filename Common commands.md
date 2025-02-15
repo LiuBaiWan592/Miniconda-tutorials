@@ -1,4 +1,4 @@
-# Conda常用命令（Conda Common Commands）
+# Miniconda 的常用命令（ Common Commands）
 
 ## 一、管理conda
 

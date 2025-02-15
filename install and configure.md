@@ -1,4 +1,4 @@
-# 安装和配置（Install and Configure）
+# Miniconda 的安装配置（Install and Configure）
 
 ## 一、Windows安装Miniconda
 

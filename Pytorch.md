@@ -1,4 +1,4 @@
-# Pytorch安装配置教程
+# Pytorch的安装配置
 
 ****
 
