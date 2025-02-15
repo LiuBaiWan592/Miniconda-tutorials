@@ -38,3 +38,17 @@ nvidia-smi
       运行`nvcc -V`命令，出现以下版本号表示安装成功
    
       ![pytorch 5. nvcc -V](img\pytorch 5. nvcc -V.png)
+
+## 二、创建pytorch虚拟环境
+
+1. 打开`miniconda`创建`pytorch`的虚拟环境（[Python、PyTorch与cuda的版本对应表 ](https://www.sdk.cn/details/Z253zkRaw5x78a0eAm)）
+
+   ```bash
+   conda create -n pytorch2.2.2 python=3.9
+   ```
+
+2. 切换到`pytorch`虚拟环境准备安装
+
+   ```bash
+   conda activate pytorch2.2.2
+   ```
