@@ -94,10 +94,11 @@
    *这里以清华源为例，其他常用*镜像源如下：*
 
    ```
-   清华大学 ：https://pypi.tuna.tsinghua.edu.cn/simple
-   中科大：https://pypi.mirrors.ustc.edu.cn/simple
-   豆瓣：http://pypi.douban.com/simple
-   阿里云 ：http://mirrors.aliyun.com/pypi/simple
+   清华大学：https://pypi.tuna.tsinghua.edu.cn/simple
+   阿里云： https://mirrors.aliyun.com/pypi/simple
+   豆瓣：https://pypi.douban.com/simple
+   中科大： https://pypi.mirrors.ustc.edu.cn/simple
+   腾讯云：https://mirrors.cloud.tencent.com/pypi/simple
    ```
 
 2. 查看配置是否成功
@@ -114,6 +115,14 @@
    pip install package-name -i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host pypi.tuna.tsinghua.edu.cn
    ```
 
+4. 一句命令换源
+
+   ```bash
+   # 添加清华源
+   pip config set global.index-url --site https://pypi.tuna.tsinghua.edu.cn/simple
    
+   # 删除已添加的源
+   pip config unset global.index-url
+   ```
 
    
