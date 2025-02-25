@@ -37,7 +37,7 @@
 
 1. 打开[清华开源软降镜像站中anaconda的使用帮助](https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/)
 
-2. Windows 用户先执行以下命令，在C:\Users\<YourUserName>\.condarc路径，创建名为 `.condarc` 的文件。
+2. Windows 用户先执行以下命令，在`C:\Users\<YourUserName>\.condarc`路径，创建名为 `.condarc` 的文件。
 
    ```bash
    conda config --set show_channel_urls yes
@@ -78,3 +78,42 @@
    ```
 
 2. 配置`miniconda3`文件夹的用户权限，给予`Users`用户完全控制权限，否则部分包由于权限不足无法安装。
+
+## 五、PyPI配置清华镜像源
+
+1. 在用户目录`C:\Users\<YourUserName>`中创建一个pip目录，如：`C:\Users\<YourUserName>\pip`，在pip文件夹中新建文件pip.ini，内容如下：
+
+   ```bash
+   [global]
+   timeout = 6000
+   index-url=https://pypi.tuna.tsinghua.edu.cn/simple/
+   [install]
+   trusted-host=mirrors.tsinghua.edu.cn
+   ```
+
+   *这里以清华源为例，其他常用*镜像源如下：*
+
+   ```
+   清华大学 ：https://pypi.tuna.tsinghua.edu.cn/simple
+   中科大：https://pypi.mirrors.ustc.edu.cn/simple
+   豆瓣：http://pypi.douban.com/simple
+   阿里云 ：http://mirrors.aliyun.com/pypi/simple
+   ```
+
+2. 查看配置是否成功
+
+   ```bash
+   pip config list
+   ```
+
+3. 临时换源
+
+   ```bash
+   pip install package-name -i https://pypi.tuna.tsinghua.edu.cn/simple
+   # 或
+   pip install package-name -i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host pypi.tuna.tsinghua.edu.cn
+   ```
+
+   
+
+   
