@@ -57,7 +57,7 @@
    jupyter notebook --generate-config
    ```
 
-   ![4. jupyter notebook config](img\4. jupyter notebook config.png)
+   ![4.jupyter_notebook_config](./img/4.jupyter_notebook_config.png)
 
 2. 设置密码
 
@@ -65,7 +65,7 @@
    jupyter notebook password
    ```
 
-   ![4. jupyter notebook password](img\5. jupyter notebook password.png)
+   ![5.jupyter_notebook_password](./img/5.jupyter_notebook_password.png)
 
    **输入的密码会保存到 .jupyter/jupyter_notebook_config.json文件中**
 

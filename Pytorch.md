@@ -21,23 +21,23 @@ nvidia-smi
 
 1. 打开[CUDA Toolkit Archive | NVIDIA Developer](https://developer.nvidia.com/cuda-toolkit-archive)选择[CUDA Toolkit 11.8.0](https://developer.nvidia.com/cuda-11-8-0-download-archive)后，选择对应系统下载安装包
 
-   ![pytorch 1. download cuda toolkit](img\pytorch 1. download cuda toolkit.png)
+   ![pytorch_1.download_cuda_toolkit](./img/pytorch_1.download_cuda_toolkit.png)
 
 2. 下载完成后，双击运行进行安装。选择自定义安装只选择安装CUDA，并取消安装CUDA中的`Visual Studio Integration`
 
-   ![pytorch 2. CUDA](img\pytorch 2. CUDA.png)
+   ![pytorch_2.CUDA](./img/pytorch_2.CUDA.png)
 
-   ![pytorch 3. No VS](img\pytorch 3. No VS.png)
+   ![pytorch_3.No VS](./img/pytorch_3.No_VS.png)
    
    3. 安装完后会在系统中添加以下环境变量
    
-      ![pytorch 4. Environment](img\pytorch 4. Environment.png)
+      ![pytorch_4.Environment](./img/pytorch_4.Environment.png)
    
    4. 测试安装是否成功
    
       运行`nvcc -V`命令，出现以下版本号表示安装成功
    
-      ![pytorch 5. nvcc -V](img\pytorch 5. nvcc -V.png)
+      ![pytorch_5.nvcc -V](./img/pytorch_5.nvcc-V.png)
 
 ## 二、创建pytorch虚拟环境
 
@@ -73,7 +73,7 @@ nvidia-smi
 
    运行结果为`True`则代表安装成功
 
-   ![pytorch 6. Successful](img\pytorch 6. Successful.png)
+   ![pytorch_6.Successful](./img/pytorch_6.Successful.png)
 
    *导入`torch`时`numpy`报错，则适当降低`numpy`版本*
    

@@ -13,15 +13,15 @@
 
 1. 在系统环境变量中添加Miniconda安装目录中的对应文件夹，如下图所示：
 
-   ![1.env](E:/Note/Miniconda tutorials/img/1. env.png)
+   ![1.env](./img/1.env.png)
 
 2. 其中前两项为Miniconda所需的环境变量：
 
-   ![2. conda env](E:/Note/Miniconda tutorials/img/2. conda env.png)
+   ![2.conda_env](./img/2.conda_env.png)
 
 3. 第一、三项为默认版本的Python所需的环境变量：
 
-   ![3. python env](E:/Note/Miniconda tutorials/img/3. python env.png)
+   ![3.python_env](./img/3.python_env.png)
 
 4. 分别在终端中运行以下命令测试配置是否成功：
 
