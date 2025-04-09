@@ -82,6 +82,8 @@
    c.NotebookApp.notebook_dir='D:\Jupyter' 	# 指定jupyter打开的文件夹
    ```
 
+   *若配置了Jupyter的默认打开文件夹，需使用其他指定文件夹时，可在指定文件夹目录中运行`jupyter notebook --notebook-dir='./'`命令实现在当前目录中运行（`--notebook-dir`参数指定运行目录）*
+
 4. 添加防火墙入站规则
 
    配置完成后首次运行会自动弹出防火墙配置，也可自己添加入站规则开放端口
