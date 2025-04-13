@@ -76,10 +76,10 @@
    打开`jupyter notebook --generate-config`命令生成的`jupyter_notebook_config.py`文件，在文件最后粘贴以下内容
 
    ```bash
-   c.NotebookApp.ip='*'      				 	# 在所有的网卡接口上开启服务
-   c.NotebookApp.port = 9008 					# 指定端口
-   c.ExtensionApp.open_browser = False    		# 不打开浏览器
-   c.NotebookApp.notebook_dir='D:\Jupyter' 	# 指定jupyter打开的文件夹
+   c.ServerApp.ip='*'      				 	# 在所有的网卡接口上开启服务
+   c.ServerApp.port = 9008 					# 指定端口
+   c.ServerApp.open_browser = False    		 # 不打开浏览器
+   c.ServerApp.notebook_dir='D:\Jupyter' 		 # 指定jupyter打开的文件夹
    ```
 
    *若配置了Jupyter的默认打开文件夹，需使用其他指定文件夹时，可在指定文件夹目录中运行`jupyter notebook --notebook-dir='./'`命令实现在当前目录中运行（`--notebook-dir`参数指定运行目录）*
