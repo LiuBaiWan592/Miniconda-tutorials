@@ -87,3 +87,31 @@
 4. 添加防火墙入站规则
 
    配置完成后首次运行会自动弹出防火墙配置，也可自己添加入站规则开放端口
+
+## 四、Jupyter Notebook中rise使用插件
+
+   **由于Jupyter Notebook安装在`base`环境中，以下命令皆在`base`环境中运行**
+
+1. 安装并启用 jupyter_contrib_nbextension
+
+   ```bash
+   # 安装
+   conda install -c conda-forge jupyter_contrib_nbextensions
+   
+   # 启用
+   jupyter contrib nbextension install --user
+   jupyter nbextensions_configurator enable --user
+   ```
+
+2. 安装并启用rise
+
+   ```bash
+   # 安装
+   pip install RISE
+   
+   # 启用
+   jupyter-nbextension install rise --py --sys-prefix
+   jupyter-nbextension enable rise --py --sys-prefix
+   ```
+
+3. 由于jupyter_contrib_nbextensions目前不支持Notebook 7，安装可能导致版本回退，可使用`pip`重新更新
