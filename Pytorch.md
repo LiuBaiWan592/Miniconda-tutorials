@@ -84,3 +84,11 @@ nvidia-smi
 ## 四、配置Jupyter至虚拟环境
 
    **接下来就可以参照`Jupyter Notebook 的安装配置`给此虚拟环境配置Jupyter Notebook**
+
+## 五、安装与当前pytorch相对应版本的其他包
+
+   ```bash
+   # 安装与pytorch相对应版本的torchtext
+   conda install -c pytorch torchtext
+   ```
+
